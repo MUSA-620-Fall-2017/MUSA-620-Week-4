@@ -3,10 +3,10 @@ library(ROAuth)
 
 
 
-access_token <- "2184943214-eLjZpuLMZiUKbwOIfY1DeWRgVgOlRjPV0WRxpb5"
-access_secret <-"VBTYQozqr7ZPHuJOe10mvrZ5NF6EhhGI7uoN4jOLi17aL"
-consumer_key <- "7UIApJahcy7JF4R1Wq03kncBA"
-consumer_secret <- "j1ftsS5QIdoCKEDyj7htMaXhPMqVddbNZJSDTLADb9S0ArXunQ"
+access_token <- ""
+access_secret <-""
+consumer_key <- ""
+consumer_secret <- ""
 
 
 
