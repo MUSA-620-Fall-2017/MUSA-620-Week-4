@@ -51,6 +51,13 @@ tweetsdf <- parseTweets(file, verbose = FALSE)
 tweetsdf$text <- iconv(tweetsdf$text, from = "UTF-8", to = "ASCII", sub="")
 
 
+tweetsdf <- transform(tweetsdf, newLon = ifelse(is.na(lon), place_lon, lon))
+tweetsdf <- transform(tweetsdf, newLat = ifelse(is.na(lat), place_lat, lat))
+
+tweetsdf <- transform(tweetsdf, trump = ifelse(  grepl("trump", tolower(text)) , "trump" , "x"))
+tweetsdf <- transform(tweetsdf, maga = ifelse(  grepl("#maga", tolower(text)) , "maga" , "x"))
+tweetsdf <- transform(tweetsdf, refugee = ifelse(  grepl("refugee", tolower(text)) , "refugee" , "x"))
+
 View(tweetsdf)
 nrow(tweetsdf)
 
