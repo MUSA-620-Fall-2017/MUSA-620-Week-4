@@ -1,4 +1,4 @@
-# MUSA620-Week-3
+# MUSA620-Week-4
 Twitter API ([notes](https://github.com/MUSA-620-Fall-2017/MUSA-620-Week-4/blob/master/week-4-twitter.pptx))
 
 
